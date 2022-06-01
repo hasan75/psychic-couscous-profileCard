@@ -34,3 +34,24 @@ body{
 .cardContainer:hover{
     height: 450px;
 }
+.imgBox{
+    position: absolute;
+    background-color: #fff;
+    height: 150px;
+    width: 170px;
+    left: 50%;
+    top: -50px;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.35);
+    overflow: hidden;
+}
+.imgBox img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+
+}
