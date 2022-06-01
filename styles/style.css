@@ -38,13 +38,18 @@ body{
     position: absolute;
     background-color: #fff;
     height: 150px;
-    width: 170px;
+    width: 150px;
     left: 50%;
     top: -50px;
     transform: translateX(-50%);
     border-radius: 20px;
     box-shadow: 0 15px 50px rgba(0,0,0,0.35);
     overflow: hidden;
+    transition: 0.5s;
+}
+.cardContainer:hover .imgBox{
+    height: 250px;
+    width: 250px;
 }
 .imgBox img{
     position: absolute;
