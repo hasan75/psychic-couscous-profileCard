@@ -19,5 +19,18 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
     background: linear-gradient(45deg, #fbda61, #ff5acd);
+}
+.cardContainer{
+    position:relative;
+    height: 190px;
+    width: 350px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+    transition: 0.5s;
+}
+.cardContainer:hover{
+    height: 450px;
 }
