@@ -24,8 +24,8 @@ body{
 }
 .cardContainer{
     position:relative;
-    /* height: 190px; */
-    height: 450px;
+    height: 190px;
+    /* height: 450px; */
     width: 350px;
     background-color: #fff;
     border-radius: 20px;
@@ -69,21 +69,67 @@ body{
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    overflow: hidden;
+    transition: 0.5s;
 }
 .cardContainer .content .details {
     padding: 40px;
     text-align: center;
     width: 100%;
     transition: 0.5s;
+    transform: translateY(150px);
+   
+}
+.cardContainer:hover .content .details{
+    transform: translateY(0px);
 }
 .cardContainer .content .details h2{
     font-family: 'Dancing Script', cursive;
     font-size: 1.5em;
-    font-weight: 600;
-    color: #555;
+    font-weight: 700;
+    color: rgb(71, 71, 71);
     line-height: 1.2em;
 }
 .cardContainer .content .details h2 span{
     font-size: 0.75em;
     font-weight: 500;
+    opacity: 0.75;
+}
+
+.cardContainer .content .details .data{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.cardContainer .content .details .data h3 {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.2em;
+    font-weight: 600;
+}
+.cardContainer .content .details .data h3 span {
+    font-size: 0.85em;
+    font-weight: 500;
+    opacity: 0.5;
+}
+.cardContainer .content .details .actionButton {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+.cardContainer .content .details .actionButton button {
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    background: #ff5f95;
+    color: #fff;
+    cursor: pointer;
+}
+.cardContainer .content .details .actionButton button:nth-child(2){
+    border: 1px solid #999;
+    background-color: #fff;
+    color: #999;
 }
